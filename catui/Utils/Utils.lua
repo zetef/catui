@@ -52,4 +52,8 @@ function csplit(str,sep)
    return ret
 end
 
+function RGBtoDecimal(value)
+   return value / 255     
+end
+
 return point
