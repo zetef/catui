@@ -53,7 +53,13 @@ function csplit(str,sep)
 end
 
 function RGBtoDecimal(value)
-   return value / 255     
+   if(value >= 255) then
+        return 1;
+   end
+   if(value <= 0) then
+        return 0;
+   end
+   return value / 255; --off by one tone soory about that
 end
 
 return point
